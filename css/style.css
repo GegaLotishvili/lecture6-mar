@@ -1,0 +1,44 @@
+.container {
+	width: 1170px;
+	margin: 0 auto;
+
+	border: 1px solid black;
+	height: 800px;
+}
+
+.bigbox {
+	width: 600px;
+	height: 600px;
+	background: yellow;
+	margin: 0 auto;
+
+	position: relative;
+
+}
+
+
+.smallbox {
+	width: 250px;
+	height: 250px;
+	background-color: cyan;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+/*	transition-property: ;
+	transition-duration: ;
+	transition-timing-function: ;
+	transition-delay: ;*/
+
+	transition: all 5s linear 1.5s;
+}
+
+.smallbox:hover {
+	background-color: green;
+	cursor: pointer;
+	transform:rotate(25deg);
+
+
+}
